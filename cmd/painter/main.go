@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/roman-mazur/architecture-lab-3/painter"
@@ -27,7 +28,7 @@ func main() {
 		http.Handle("/", lang.HttpHandler(&opLoop, &parser))
 		_ = http.ListenAndServe("localhost:17000", nil)
 	}()
-
+	fmt.Printf("localhost:17000\n")
 	pv.Main()
 	opLoop.StopAndWait()
 }
