@@ -1,4 +1,4 @@
-module github.com/roman-mazur/architecture-lab-3
+module github.com/Homa4/architecture-lab-3
 
 go 1.24
 
