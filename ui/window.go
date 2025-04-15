@@ -135,17 +135,17 @@ func (pw *Visualizer) drawDefaultUI() {
 	pw.w.Fill(pw.sz, bgColor, draw.Src)
 	figureColor := color.RGBA{R: 0, G: 0, B: 255, A: 255}
 	horz := image.Rect(
-		pw.crossCenter.X-crossSize/2,
-		pw.crossCenter.Y-armThickness/2,
-		pw.crossCenter.X+crossSize/2,
-		pw.crossCenter.Y+armThickness/2,
+	 pw.crossCenter.X-crossSize/2,
+	 pw.crossCenter.Y-armThickness/2,
+	 pw.crossCenter.X+crossSize/2,
+	 pw.crossCenter.Y+armThickness/2,
 	)
 	pw.w.Fill(horz, figureColor, draw.Src)
 	vert := image.Rect(
-		pw.crossCenter.X-armThickness/2,
-		pw.crossCenter.Y-crossSize/2,
-		pw.crossCenter.X+armThickness/2,
-		pw.crossCenter.Y+crossSize/2,
+	 pw.crossCenter.X-armThickness/2,
+	 pw.crossCenter.Y-crossSize/2,
+	 pw.crossCenter.X+armThickness/2,
+	 pw.crossCenter.Y+crossSize/2,
 	)
 	pw.w.Fill(vert, figureColor, draw.Src)
-}
+   }
